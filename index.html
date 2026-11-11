@@ -214,11 +214,27 @@
   .steps h3 { margin-bottom: 0.25em; }
 
   .about { background: var(--light-blue); }
+  .story .step-label {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--navy);
+    margin: 0 0 0.75em;
+  }
+  .story .lead {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    line-height: 1.3;
+    max-width: 760px;
+    margin: 0 0 1em;
+  }
+  @media (max-width: 860px) { .words { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .words { grid-template-columns: 1fr; } }
   .about p { max-width: 680px; }
 
   .words {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     margin-top: 24px;
   }
@@ -299,15 +315,48 @@
       <h1>Welcome to New Hope</h1>
       <div class="verse">
         <blockquote>&ldquo;Come to Me, all who are weary and heavy-laden, and I will give you rest.&rdquo;</blockquote>
-        <cite>Matthew 11:28, Legacy Standard Bible</cite>
+        <cite>Matthew 11:28</cite>
       </div>
     </div>
   </section>
 
-  <section class="block">
+  <section class="block story">
     <div class="wrap">
-      <div class="accent-rule"></div>
-      <h2>Come this Sunday</h2>
+      <p class="step-label">1. Character</p>
+      <p class="lead">A person who is searching for truth, hope that lasts and a place to belong. They may be new to the faith or returning after years away.</p>
+    </div>
+  </section>
+
+  <section class="block story">
+    <div class="wrap">
+      <p class="step-label">2. Problem</p>
+      <p class="lead">Life feels uncertain, and church feels like a room of strangers. Underneath that is the deeper problem: sin separates us from God, and no effort of ours closes the gap.</p>
+    </div>
+  </section>
+
+  <section class="block story">
+    <div class="wrap">
+      <p class="step-label">3. Guide</p>
+      <p class="lead">Jesus Christ, the only Saviour. New Hope Baptist Church is a small congregation that was once strangers too, and we hold to Scripture and the 1689 Confession.</p>
+    </div>
+  </section>
+
+  <section class="block story">
+    <div class="wrap">
+      <p class="step-label">4. Plan</p>
+      <p class="lead">Three steps.</p>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h3>Come on a Sunday at 11am.</h3></div></li>
+        <li><span class="num">2</span><div><h3>Hear God&rsquo;s Word read and preached.</h3></div></li>
+        <li><span class="num">3</span><div><h3>Stay afterwards and ask your questions.</h3></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block story">
+    <div class="wrap">
+      <p class="step-label">5. Call to action</p>
+      <p class="lead">Come this Sunday at 11am to the Brian Wunsch Centre.</p>
       <div class="cards">
         <div class="card-box">
           <h3>When</h3>
@@ -322,33 +371,17 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block story">
     <div class="wrap">
-      <div class="accent-rule"></div>
-      <h2>What to expect</h2>
-      <ol class="steps">
-        <li>
-          <span class="num">1</span>
-          <div>
-            <h3>Come on a Sunday at 11am</h3>
-            <p>Come as you are. There is nothing to bring and nothing to prepare.</p>
-          </div>
-        </li>
-        <li>
-          <span class="num">2</span>
-          <div>
-            <h3>Hear God&rsquo;s Word read and preached</h3>
-            <p>Jesus says, &ldquo;Take My yoke upon you and learn from Me&rdquo; (Matthew 11:29, LSB). We come to learn from him.</p>
-          </div>
-        </li>
-        <li>
-          <span class="num">3</span>
-          <div>
-            <h3>Stay afterwards and ask your questions</h3>
-            <p>Talk with us. We would love to hear your questions and to know you.</p>
-          </div>
-        </li>
-      </ol>
+      <p class="step-label">6. Failure avoided</p>
+      <p class="lead">Going on without knowing the Saviour leaves the soul in danger.</p>
+    </div>
+  </section>
+
+  <section class="block story">
+    <div class="wrap">
+      <p class="step-label">7. Success</p>
+      <p class="lead">Knowing Christ, being made new in him and belonging to his people.</p>
     </div>
   </section>
 
@@ -356,7 +389,6 @@
     <div class="wrap">
       <div class="accent-rule"></div>
       <h2>Who we are</h2>
-      <p>New Hope Baptist Church is a small Reformed Baptist congregation in Wakeley, in Western Sydney. We hold to the Scriptures as our final authority, and to the doctrines of grace.</p>
       <div class="words">
         <div class="word"><h3>Biblical</h3><p>Grounded in the authority and sufficiency of God&rsquo;s Word.</p></div>
         <div class="word"><h3>Christ centred</h3><p>Exalting Jesus Christ in preaching, worship and life.</p></div>
@@ -368,6 +400,8 @@
         <div class="word"><h3>Fellowshipping</h3><p>Sharing life together as God&rsquo;s people.</p></div>
         <div class="word"><h3>Evangelistic</h3><p>Proclaiming the gospel and calling people to Christ.</p></div>
         <div class="word"><h3>Grace filled</h3><p>Reflecting God&rsquo;s grace in our relationships and ministry.</p></div>
+        <div class="word"><h3>Disciple making</h3><p>Committed to teaching believers to follow Christ, obey His commands, and grow in spiritual maturity.</p></div>
+        <div class="word"><h3>Mission minded</h3><p>Seeking to make Christ known through the proclamation of the gospel and faithful Christian living.</p></div>
       </div>
     </div>
   </section>
